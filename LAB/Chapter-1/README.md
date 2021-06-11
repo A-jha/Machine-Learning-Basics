@@ -48,4 +48,23 @@ print(sparse_mat)
 
 The output of sparse matrix shows the index where non zero value is present.
 
-- In abobe example 1 is present at index 11 and 3 is at index 20
+- In above example 1 is present at index 11 and 3 is at index 20
+
+## Eigenvalue and Eigenvector
+
+Eigenvectors are widely used in machine learning libraries. Intuitively, given a
+linear transformation represented by a matrix, A, eigenvectors are vectors that,
+when that transformation is applied, change only in scale (not direction). More
+formally:
+
+<center> Av = λv</center>
+
+where A is a square matrix, λ contains the eigenvalues and v contains the
+eigenvectors. In NumPy’s linear algebra toolset, eig lets us calculate the
+eigenvalues, and eigenvectors of any square matrix.
+
+## Inverse of a matrix
+
+The inverse of a square matrix, A, is a second matrix A –1.
+
+<center>AA-1 = I</center>
