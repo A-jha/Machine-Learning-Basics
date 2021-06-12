@@ -440,3 +440,37 @@ print(np.linalg.inv(matrix))
 [[-1.66666667  1.33333333]
  [ 0.66666667 -0.33333333]]
 """
+
+#==========================#
+# Generating Random Values #
+#==========================#
+
+# set seed
+np.random.seed(0)
+
+
+# Generate three random float numbers between 0.0 and 1.0
+print(np.random.random(3))
+# ---> [0.5488135  0.71518937 0.60276338]
+
+
+# Generate three rand int between 1 and 10
+print(np.random.randint(0, 11, 3))
+# ---> [3 7 9]
+
+
+# Draw three numbers from normal distribution with mean 0.0 and
+# std deviation of 1.0
+print(np.random.normal(0.0, 1.0, 3))
+# ---> [-1.42232584  1.52006949 -0.29139398]
+
+
+# Draw three numbers from a logistic distribution with
+#  mean 0.0 and scale of 1.0
+print(np.random.logistic(0.0, 1.0, 3))
+# ---> [-0.98118713 -0.08939902  1.46416405]
+
+
+# Draw three numbers greater than or equal to 1.0 and less than 2.0
+print(np.random.uniform(1.0, 2.0, 3))
+# ---> [1.47997717 1.3927848  1.83607876]
