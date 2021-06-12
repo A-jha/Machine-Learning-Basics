@@ -436,3 +436,7 @@ print(matrix_a*matrix_b)
 matrix = np.array([[1, 4], [2, 5]])
 
 print(np.linalg.inv(matrix))
+"""
+[[-1.66666667  1.33333333]
+ [ 0.66666667 -0.33333333]]
+"""
